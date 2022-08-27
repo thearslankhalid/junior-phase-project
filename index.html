@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Order Taking System</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+  <h1>Order Taking System</h1>
+
+  <form id="order-form">
+    <!-- Customer Name Input -->
+    <div class="input-container">
+      <label for="name">Customer Name</label>
+      <input name="name" id="name" placeholder="Enter customer name" />
+    </div>
+
+    <!-- Menu Inputs -->
+    <div class="input-container">
+      <h5>Menu Items</h5>
+
+      <input type="checkbox" name="menu-item" class="menu-item" value="Pizza" id="Pizza" />
+      <label for="Pizza">Pizza - 1000</label>
+
+      <br>
+
+      <input type="checkbox" name="menu-item" class="menu-item" value="Burger" id="Burger" />
+      <label for="Burger">Burger</label>
+
+      <br>
+
+      <input type="checkbox" name="menu-item" class="menu-item" value="Wings" id="Wings" />
+      <label for="Wings">Wings</label>
+    </div>
+
+    <div class="input-container">
+      <h5>Select payment method</h5>
+
+      <input type="radio" name="payment" class="payment-method" value="card" id="card" />
+      <label for="card">Card</label>
+      
+      <br>
+
+      <input type="radio" name="payment" class="payment-method" value="cash" id="cash" />
+      <label for="cash">Cash</label>
+  </form>
+
+  <div id="receipt">
+    <p>Customer name: <span id="customer-name"></span></p>
+    <p>Selected Items: <span id="menu-items"></span></p>
+    <p>Payment Method: <span id="payment-method"></span></p>
+  </div>
+
+
+  <script src="./index.js"></script>
+</body>
+</html>
